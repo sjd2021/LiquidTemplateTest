@@ -9,8 +9,6 @@ using Newtonsoft.Json.Serialization;
 
 var serializer = JsonSerializer.CreateDefault(new JsonSerializerSettings
 {
-    // Intentionally taking this out.. leaving it commented temporarily so that issues related to this can be found/resolved quickly
-    //ContractResolver = new IncludeIgnoredAttributesContractResolver(),
     ContractResolver = new CamelCasePropertyNamesContractResolver(),
     ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
     NullValueHandling = NullValueHandling.Include,

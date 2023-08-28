@@ -1,0 +1,15 @@
+{% layout '_layout.liquid' %}
+
+This is the home page
+
+<div>
+    PropertyA = {{ propertyA }}
+</div>
+<div>
+    PropertyB = {{ propertyB }}
+</div>
+{%  render "sections/section" %}
+
+{% section footer %}
+This is the result of the footer example (from readme) working!
+{% endsection %}
